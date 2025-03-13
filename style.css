@@ -1,0 +1,487 @@
+
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%); */
+}
+.section1{
+    height: 100vh;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: white;
+}
+
+.logo{
+    width: 50%;
+    height: 100px;
+}
+.logo h1{
+    line-height: 100px;
+    padding-left: 50px;
+}
+.menu{
+    width: 50%;
+    height: 100px;
+}
+.menu ul{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu ul li{
+    cursor: pointer;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+section{display: flex;}
+.leftside{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.leftside img{
+    width: 650px;
+    height: 500px;
+}
+.rightside{
+    width: 50%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+}
+.rightside h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.rightside p{
+    font-size: 1.1rem;
+    padding: 30px 0;
+}
+.rightside button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    border-radius: 4px;
+    padding: 20px 35px;
+    border-color: white;
+}
+button:hover{
+    background: linear-gradient(57deg, #1e4d92, #00c6a7);
+}
+/* section 2 */
+.section2 {
+    background: linear-gradient(57deg, #1e4d92, #00c6a7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+}
+
+.pricing-plan {
+    color: white;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    border: 3px solid #007bff;
+    height: 350px;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-plan h2 {
+    border: navy;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.pricing-plan li {
+    margin: 5px 0;
+    color: #555;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* .popular {
+    border: 3px solid #007bff;
+    transform: scale(1.05);
+} */
+ /* --------------------------------- */
+
+ /* About Us Section */
+.about-us {
+    background: rgb(212, 212, 223);
+    color: rgb(7, 2, 71);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* About Us Grid Layout */
+.about-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-box {
+    color: white;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;
+    min-width: 300px;
+    text-align: left;
+}
+
+.about-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.about-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-box li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* About Us Button */
+.about-btn {
+    margin-top: 20px;
+    background: white;
+    color: #1e4d92;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.about-btn:hover {
+    background: #00c6a7;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* ------------------------------------- */
+
+
+/* Full-Screen Centered Layout */
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Login Container - Flexbox for Left/Right Layout */
+.login-container {
+    display: flex;
+    width: 850px;
+    height: 500px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Side - Login Box */
+.login-box {
+    width: 50%;
+    padding: 40px;
+    background: rgb(247, 239, 239);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Right Side - Background Image */
+.login-image {
+    width: 50%;
+    background: url('login1.webp') center/cover no-repeat;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #888;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+/* Social Buttons */
+.social-login button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.google {
+    background: #db4437;
+}
+
+.social-login button i {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    
+    .login-box {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .login-image {
+        width: 100%;
+        height: 250px;
+    }
+}
+/* --------------Footer--------------- */
+/* Footer Icons */
+/* Footer Styling */
+.contact-footer {
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);; /* Dark navy blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Aligns content vertically */
+}
+
+/* Footer Icons */
+.footer-icons {
+    margin-top: 5px;
+}
+
+/* Footer Icons - Links */
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 28px; /* Icon size */
+    color: #ffffff; /* Default white color */
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.footer-icons a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    
+    .login-box {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .login-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contact-footer {
+        position: static;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+}
+
+/* Mobile Footer Styling */
+@media (max-width: 600px) {
+    .footer-icons a {
+        font-size: 24px; /* Smaller icon size for mobile */
+        margin: 0 5px;
+    }
+}
